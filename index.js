@@ -7,6 +7,7 @@ const app = express();
 
 // Serve static files from the 'node_modules' directory
 app.use('/static', express.static(path.join(__dirname, 'node_modules')));
+app.use(express.static(__dirname));
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
