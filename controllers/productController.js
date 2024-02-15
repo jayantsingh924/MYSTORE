@@ -20,6 +20,9 @@ exports.renderProducts = (req, res) => {
 } 
 
 exports.renderAddProduct = (req, res) => {
-    console.log('hhhhh');
     res.render("add-product");
+} 
+
+exports.renderEditProduct = (req, res) => {
+    res.render("edit-product");
 } 
