@@ -1,7 +1,12 @@
  
 const express = require('express');
 const Home = require('./routes/home');
+const path = require('path');
 const app = express();
+
+
+// Serve static files from the 'node_modules' directory
+app.use('/static', express.static(path.join(__dirname, 'node_modules')));
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
