@@ -19,6 +19,7 @@ exports.renderProducts = (req, res) => {
     res.render("home", {products:products});
 } 
 
-exports.renderProducts = (req, res) => {
-    res.render("home", {products:products});
+exports.renderAddProduct = (req, res) => {
+    console.log('hhhhh');
+    res.render("add-product");
 } 

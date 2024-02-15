@@ -1,7 +1,10 @@
  
 const express = require('express');
-const Home = require('./routes/home');
 const path = require('path');
+
+const Home = require('./routes/home');
+const addProduct = require('./routes/addProduct');
+
 const app = express();
 
 
@@ -13,6 +16,7 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 app.use('/', Home);
+app.use('/add-product',addProduct);
 
 
 
