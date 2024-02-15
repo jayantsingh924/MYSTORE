@@ -3,6 +3,8 @@ const express = require('express');
 const Home = require('./routes/home');
 const app = express();
 
+app.set('view engine', 'ejs');
+app.set('views', 'views');
 
 app.use('/', Home);
 
